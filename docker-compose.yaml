@@ -1,0 +1,17 @@
+version: '3'
+
+volumes:
+  keycloak_data:
+    driver: local
+
+services:
+  database:
+    image: postgres:13
+    environment:
+      POSTGRES_DB: grafanadb
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    volumes:
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
+    ports:
+      - "5432:5432"

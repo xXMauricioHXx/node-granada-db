@@ -1,0 +1,24 @@
+{
+  "name": "grafana-db",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsnd --respawn --ignore-watch node_modules ./src/index.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "csv-parse": "^5.5.6",
+    "csv-parser": "^3.0.0",
+    "iconv-lite": "^0.6.3",
+    "pg": "^8.12.0",
+    "ts-node-dev": "^2.0.0"
+  },
+  "devDependencies": {
+    "@types/csv-parse": "^1.2.2",
+    "@types/node": "^20.14.10",
+    "@types/pg": "^8.11.6"
+  }
+}
